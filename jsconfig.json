@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"baseUrl": "./",
+		"moduleResolution": "node",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"lib": ["dom", "dom.iterable", "scripthost"]
+	}
+}

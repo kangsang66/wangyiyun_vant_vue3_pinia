@@ -1,0 +1,107 @@
+{
+  "id": "3486697",
+  "name": "网易云移动端",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "26419725",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "ffe2",
+      "unicode_decimal": 65506
+    },
+    {
+      "icon_id": "14584409",
+      "name": "duihao",
+      "font_class": "dui",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "18939029",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "666893",
+      "name": "系统返回",
+      "font_class": "xitongfanhui",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "3762271",
+      "name": "音乐专辑",
+      "font_class": "yinlezhuanji",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "21054244",
+      "name": "商店销售排行榜",
+      "font_class": "shangdianxiaoshoupaihangbang",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "23943228",
+      "name": "直播",
+      "font_class": "zhibo",
+      "unicode": "f9b9",
+      "unicode_decimal": 63929
+    },
+    {
+      "icon_id": "25687556",
+      "name": "关注",
+      "font_class": "guanzhu",
+      "unicode": "ff76",
+      "unicode_decimal": 65398
+    },
+    {
+      "icon_id": "25687585",
+      "name": "游戏",
+      "font_class": "youxi",
+      "unicode": "ff89",
+      "unicode_decimal": 65417
+    },
+    {
+      "icon_id": "29602537",
+      "name": "电子书",
+      "font_class": "dianzishu",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "18514334",
+      "name": "音乐，歌单，音符",
+      "font_class": "yinlegedanyinfu",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "29602538",
+      "name": "电台",
+      "font_class": "diantai",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "29731523",
+      "name": "推荐",
+      "font_class": "tuijian",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "5029",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

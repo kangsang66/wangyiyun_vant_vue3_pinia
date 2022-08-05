@@ -3,7 +3,8 @@ import request from '@/utils/request'
 // 搜索页推荐新音乐
 export const RecommendSong = query => request({
     method:'GET',
-    url:'/personalized/newsong&realIP=171.212.33.193',
+    url:'/personalized/newsong',
+    query
 })
 // 搜索歌曲
 export const Search = (query) => request({

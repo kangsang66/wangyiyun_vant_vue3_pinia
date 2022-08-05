@@ -3,7 +3,6 @@ import axios from "axios";
 import { Toast } from 'vant';
 // 域名前缀
 axios.defaults.baseURL='https://netease-cloud-music-api-psi-snowy.vercel.app'
-axios.defaults.timeout= 3000
 // axios.withCredentials=true
 axios.withCredentials=true
 // &realIP=171.212.33.193 

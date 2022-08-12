@@ -9,10 +9,12 @@
     </div>
     <div class="box">
       <div class="recommend">
-        <van-swipe :loop="false"
+        <van-skeleton :loading="Show" title :row="3" :animate="true" />
+        <van-swipe v-if="!Show"
+                   :loop="false"
                    :width="103"
                    :show-indicators="false">
-          <van-swipe-item v-for="songInfo in RecommendInfo.songs"
+          <van-swipe-item  v-for="songInfo in RecommendInfo.songs"
                           :key="songInfo.id">
             <!-- 路由传递参数使用{path:'',params:} -->
             <router-link
@@ -30,10 +32,13 @@
 
 <script>
 import { RecommendAPI } from '@/api/index.js'
-import { reactive, onMounted } from 'vue'
+import { reactive, onMounted,ref } from 'vue'
+// == pinia ==
+import {usePlayListStore} from '@/store/index'
 export default {
   name: 'Recommend',
   setup () {
+    const Show = ref(usePlayListStore().Show)
     const RecommendInfo = reactive({
       songs: []
     })
@@ -42,11 +47,15 @@ export default {
     }
     onMounted(async () => {
       let recommend = await RecommendAPI()
-      return RecommendInfo.songs = recommend.data.result
+      RecommendInfo.songs = recommend.data.result
+      setTimeout(()=>{
+        Show.value = false
+      },2000)
     })
     return {
       RecommendInfo,
-      counts
+      Show,
+      counts,
     }
   }
 }

@@ -20,6 +20,7 @@ export const usePlayListStore = defineStore(name.name, {
       showLoginVertify:false,  // 展示手机验证页
       VertifyNumber:false,   // 手机验证码发送
       PhoneNumber:null,  // 当前手机号
+      Show:true // 显示骨架屏
     }
   },
   // 修饰值 相当于computed

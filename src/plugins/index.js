@@ -1,9 +1,9 @@
 // 循环遍历引入项
 // 引入vant
-import { Icon,Swipe,SwipeItem,Search,Button,Popup,Overlay,ConfigProvider,Cell,Checkbox,CheckboxGroup,Field, CellGroup,Toast,Progress,Dialog} from 'vant';
+import { Icon,Swipe,SwipeItem,Search,Button,Popup,Overlay,ConfigProvider,Cell,Checkbox,CheckboxGroup,Field, CellGroup,Toast,Progress,Dialog,Skeleton} from 'vant';
 
 const plugins = [
-    Icon,Swipe,SwipeItem,Search,Button,Popup,Overlay,ConfigProvider,Cell,Checkbox,CheckboxGroup,Field, CellGroup,Toast,Progress,Dialog
+    Icon,Swipe,SwipeItem,Search,Button,Popup,Overlay,ConfigProvider,Cell,Checkbox,CheckboxGroup,Field, CellGroup,Toast,Progress,Dialog,Skeleton
 ]
 // 获取app参数即可
 export default function getVant(app){

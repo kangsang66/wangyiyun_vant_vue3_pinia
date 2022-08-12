@@ -1,6 +1,13 @@
 <template>
-  <router-view />
+
   <FooterMusic v-if="showAudio" />
+  <router-view v-slot="{ Component }">
+    <keep-alive>
+      <component :is="Component" :key="$route.name" v-if="$route.meta.keepAlive" />
+    </keep-alive>
+      <component :is="Component" :key="$route.name" v-if="!$route.meta.keepAlive" />
+  </router-view>
+
 </template>
 
 <script>
@@ -59,5 +66,6 @@ body {
   --van-progress-background-color: #90887f !important;
   // --van-overlay-background-color: 0 !important;
   --van-overlay-z-index: 2 !important;
+  --van-skeleton-row-height:21px!important;
 }
 </style>

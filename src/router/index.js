@@ -8,6 +8,9 @@ const routes = [
     path: '/Home',
     name: 'home',
     component:() => import('../views/Home.vue'),
+    meta:{
+      keepAlive:true
+    }
   },
   {
     path: '/recommendMusic',
@@ -19,7 +22,7 @@ const routes = [
     name: 'login',
     component: () => import('../views/Login.vue'),
     meta:{
-      isChecked:false
+      isChecked:false,
     }
   },
   {
@@ -41,11 +44,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-// 全局前置路由守卫
-// router.beforeEach((to,from,next)=>{
-//   if(to.path==='/phonelogin'){
-
-//   }
-// })
 
 export default router

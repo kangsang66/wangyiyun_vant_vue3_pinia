@@ -3,7 +3,9 @@
     <top-nav />
     <swiper />
     <IconList />
-    <Recommend />
+    <Suspense>
+      <Recommend />
+    </Suspense>
   </div>
 </template>
 

@@ -1,20 +1,21 @@
 const { defineConfig } = require("@vue/cli-service");
 const Timestamp = new Date().getTime();
 module.exports = defineConfig({
+	productionSourceMap: false,
 	transpileDependencies: true,
 	lintOnSave: false,
 	devServer: {
 		historyApiFallback: true,
-		allowedHosts:"all",
+		allowedHosts: "all",
 		headers: {
-			'Access-Control-Allow-Origin': '*',
+			"Access-Control-Allow-Origin": "*",
 		},
 		proxy: {
 			"/api": {
 				target: "https://neteasecloudmusicapi.vercel.app/#/?id=neteasecloudmusicapi", //接口域名
 				changeOrigin: true, //是否跨域
 				ws: true, //是否代理 websockets
-				secure:false, //是否https接口
+				secure: false, //是否https接口
 			},
 		},
 	},
